@@ -5,7 +5,9 @@ Currenzor is a sample currency conversion web application. It serves as a playgr
 ## Installation steps
 
 1. inside currenzor-api, run `yarn`
-2. `npm run`
+2. `yarn debug`
+3. inside `currenzor-web`, run `yarn`
+4. `yarn start`
 
 ## Prerequisites
 
@@ -15,4 +17,14 @@ Currenzor is a sample currency conversion web application. It serves as a playgr
 
 ## Credits
 
+Backend server.ts inspired by: https://github.com/gtsopour/nodejs-shopping-cart/blob/master/bin/www
 Backend setup inspired by: https://github.com/Microsoft/TypeScript-Node-Starter
+React calling express: https://daveceddia.com/create-react-app-express-backend/
+
+## Consider
+
+https://github.com/tj/commander.js for cmdline args parsing
+
+MERN3 https://github.com/Hashnode/mern-starter https://hashnode.blog/mern-v3-0-is-underway-791f9bf92bce https://github.com/Microsoft/vscode-recipes/tree/master/MERN-Starter
+
+mlab https://mlab.com/home?newAccount=1

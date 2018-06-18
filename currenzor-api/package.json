@@ -9,7 +9,7 @@
     "build-ts": "tsc",
     "watch-ts": "tsc -w",
     "serve": "node dist/server.js",
-    "serve-debug": "nodemon --inspect dist/server.js",
+    "serve-debug": "nodemon --inspect dist/server.js --port=3001",
     "watch-debug": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run serve-debug\""
   },
   "dependencies": {
@@ -20,6 +20,7 @@
     "morgan": "~1.9.0"
   },
   "devDependencies": {
+    "@types/express": "^4.16.0",
     "@types/node": "^10.3.3",
     "concurrently": "^3.5.1",
     "nodemon": "^1.17.5"

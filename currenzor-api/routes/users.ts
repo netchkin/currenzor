@@ -1,8 +1,8 @@
-var express = require('express');
-var router = express.Router();
+import * as express from 'express'
+const router = express.Router()
 
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send(['Petr', 'Pavel', 'Andrea'])
 });
 
-module.exports = router;
+module.exports = router

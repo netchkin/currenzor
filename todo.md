@@ -4,11 +4,22 @@
 
 * [x] vs code debug express
 * [x] make the server run & debug with VScode
-* [ ] how does auto attach work?
+* [x] how does auto attach work?
 * [x] add TS to the server
-* [ ] serve react from the server
+* [x] serve react from the server
+* [ ] tsconfig as in react app
+* [ ] run FE & BE with a single command
 * [ ] debug react from vs code as well
 * [ ] cascade install
+* [ ] introduced localhost and fixed ports into package.jsons, fix to allow a production build
+* [x] connect FE and BE with REST
+* [ ] connect FE and BE with graphQL
+* [ ] design a basic app
+  * [ ] look & feel
+  * [ ] behind the scenes
+* [ ] run tests from vs code
+* [ ] debug jest
+* [ ] get rid of error on / (express)
 
 ## Technology todolist
 
