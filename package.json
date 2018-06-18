@@ -3,6 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "debug": "npm run debug --prefix currenzor-api"
+    "debug:api": "yarn --cwd currenzor-api run debug",
+    "debug:web": "yarn --cwd currenzor-web run start",
+    "debug": "concurrently -k -p \"[{name}]\" -n \"API,WEB\" \"yarn run debug:api\" \"yarn run debug:web\""
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
   }
 }

@@ -8,7 +8,7 @@
 * [x] add TS to the server
 * [x] serve react from the server
 * [ ] tsconfig as in react app
-* [ ] run FE & BE with a single command
+* [x] run FE & BE with a single command
 * [ ] debug react from vs code as well
 * [ ] cascade install
 * [ ] introduced localhost and fixed ports into package.jsons, fix to allow a production build
@@ -20,6 +20,7 @@
 * [ ] run tests from vs code
 * [ ] debug jest
 * [ ] get rid of error on / (express)
+* [ ] consolidate yarn vs npm
 
 ## Technology todolist
 
