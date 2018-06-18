@@ -5,7 +5,7 @@
 * [x] vs code debug express
 * [x] make the server run & debug with VScode
 * [ ] how does auto attach work?
-* [ ] add TS to the server
+* [x] add TS to the server
 * [ ] serve react from the server
 * [ ] debug react from vs code as well
 * [ ] cascade install
@@ -15,6 +15,8 @@
 * [ ] callbags
 * [ ] redux-saga
 * [ ] GraphQL
+* [ ] Jest frontend
+* [ ] Jest backend
 
 ## Purple todolist
 
@@ -28,7 +30,7 @@
   * [ ] Total number of conversion rates made
 * [ ] no locally installed database (file or cloud hosted - free mongo or firebase?)
 * [ ] no prereq - should run on node... (npm / yarn install)
-* [ ] ES6 or TS
+* [x] ES6 or TS
 * [ ] production ready work
 
 ## My feature list

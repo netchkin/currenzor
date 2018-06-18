@@ -12,3 +12,7 @@ Currenzor is a sample currency conversion web application. It serves as a playgr
 * Yarn
 * Node.js
 * Typescript
+
+## Credits
+
+Backend setup inspired by: https://github.com/Microsoft/TypeScript-Node-Starter

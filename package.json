@@ -3,6 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npm start --prefix currenzor-api"
+    "debug": "npm run debug --prefix currenzor-api"
   }
 }

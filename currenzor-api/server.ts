@@ -1,6 +1,5 @@
-#!/usr/bin/env node
 
-var app = require('../app');
+var app = require('./app');
 var debug = require('debug')('currenzor-api:server');
 var http = require('http');
 
