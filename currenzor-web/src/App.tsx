@@ -4,10 +4,17 @@ import './App.css';
 import logo from './logo.svg';
 
 class App extends React.Component<{}, {users: string[]}> {
+  constructor() {
+    super({})
+    this.state = { users: [] }
+  }
+
   public componentDidMount() {
     fetch('/users')
       .then(res => res.json())
-      .then(users => this.setState({ users }));
+      .then(users => {
+        this.setState({ users })
+      })
   }
 
   public render() {
@@ -23,4 +30,4 @@ class App extends React.Component<{}, {users: string[]}> {
   }
 }
 
-export default App;
+export default App
