@@ -10,10 +10,16 @@ class App extends React.Component<{}, {users: string[]}> {
   }
 
   public componentDidMount() {
-    fetch('/users')
+    fetch('/graphql', {
+      body: JSON.stringify({
+        query: '{ users }'
+      }),
+      headers: { 'content-type': 'application/json' },
+      method: 'POST',
+    })
       .then(res => res.json())
-      .then(users => {
-        this.setState({ users })
+      .then(gql => {
+        this.setState({ users: gql.data.users })
       })
   }
 

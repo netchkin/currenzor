@@ -10,11 +10,11 @@ app.use(logger('dev'))
 
 const schema = buildSchema(`
   type Query {
-    hello: String
+    users: [String]
   }
 `)
 var root = {
-  hello: () => 'Hello world!',
+  users: () => ['Pavel', 'Andrea', 'Petr'],
 }
 
 app.use('/graphql', graphqlHTTP({
