@@ -2,6 +2,10 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es6",
+        "lib": [
+            "esnext",
+            "esnext.asynciterable"
+        ],
         "sourceMap": true,
         "watch": false,
         "outDir": "dist",
@@ -11,7 +15,8 @@
         "noImplicitAny": true,
         "strictNullChecks": true,
         "suppressImplicitAnyIndexErrors": true,
-        "noUnusedLocals": true
+        "noUnusedLocals": true,
+        "allowSyntheticDefaultImports": true
     },
     "exclude": [
         "node_modules",

@@ -21,12 +21,14 @@
 * [ ] debug jest
 * [ ] get rid of error on / (express)
 * [ ] consolidate yarn vs npm
+* [ ] practices for graphql server
 
 ## Technology todolist
 
 * [ ] callbags
+* [ ] react storybook
 * [ ] redux-saga
-* [ ] GraphQL
+* [x] GraphQL
 * [ ] Jest frontend
 * [ ] Jest backend
 
@@ -53,3 +55,7 @@
 * [ ] convert to serverless?
 * [ ] premium membership
 * [ ] google-like interface
+
+## Take look on:
+
+* [ ] https://github.com/graphql-boilerplates/typescript-graphql-server
