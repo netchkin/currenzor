@@ -11,10 +11,15 @@ app.use(logger('dev'))
 const schema = buildSchema(`
   type Query {
     users: [String]
+    search(namePart: String): [String]
   }
 `)
-var root = {
-  users: () => ['Pavel', 'Andrea', 'Petr'],
+
+const users = ['Pavel', 'Andrea', 'Petr']
+
+const  root = {
+  users: () => users,
+  search: ({namePart}: {namePart: string}) => users.filter(u => u.toLowerCase().indexOf(namePart.toLowerCase()) !== -1)
 }
 
 app.use('/graphql', graphqlHTTP({
