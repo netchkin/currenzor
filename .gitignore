@@ -2,4 +2,11 @@ node_modules
 
 .vscode
 
+# Binary or transpiled files to distribute, no need to keep in repo
 dist
+
+# Do not push API keys to repo
+fixer.api.json
+
+# Temporary files for simulating database
+tmp
