@@ -16,17 +16,11 @@ app.use(logger('dev'))
 
 const schema = buildSchema(`
   type Query {
-    users: [String]
-    search(namePart: String): [String]
     convert(value: Float, sourceCurrency: String, targetCurrency: String): Float
   }
 `)
 
-const users = ['Pavel', 'Andrea', 'Petr']
-
 const root = {
-  users: async () => await new Promise((resolve) => resolve(users)),
-  search: ({namePart}: {namePart: string}) => users.filter(u => u.toLowerCase().indexOf(namePart.toLowerCase()) !== -1),
   convert: async (model: ConversionModel) => await convertToCurrency(model)
 }
 
@@ -35,6 +29,7 @@ const root = {
  * This conversion is not accurate since it uses intermendiate currency, in this case EUR.
  */
 async function convertToCurrency({value, sourceCurrency, targetCurrency}: ConversionModel): Promise<number> {
+  console.log('here')
   const rates = (await lazyRates).rates
   const fromRate = rates[sourceCurrency]
   const toRate = rates[targetCurrency]
