@@ -4,10 +4,7 @@ Currenzor is a sample currency conversion web application. It serves as a playgr
 
 ## Installation steps
 
-1. inside currenzor-api, run `yarn`
-2. `yarn debug`
-3. inside `currenzor-web`, run `yarn`
-4. `yarn start`
+1. start using `yarn debug`
 
 ## Prerequisites
 
